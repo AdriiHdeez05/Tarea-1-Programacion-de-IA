@@ -1,7 +1,7 @@
 import string
 
 
-def contar_frecuencia_palabras(texto):
+def contar_frecuencia(texto):
 
     texto = texto.translate(str.maketrans("", "", string.punctuation))
 
@@ -21,9 +21,9 @@ def contar_frecuencia_palabras(texto):
 
 def main():
 
-    texto_usuario = input("Ingresa una frase o párrafo: ")
+    textoUsu = input("Ingresa una frase o párrafo: ")
 
-    frecuencias = contar_frecuencia_palabras(texto_usuario)
+    frecuencias = contar_frecuencia(textoUsu)
 
     print("\nFrecuencia de palabras:")
     for palabra in sorted(frecuencias):
